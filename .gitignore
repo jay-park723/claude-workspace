@@ -1,0 +1,18 @@
+# 개인 설정·비밀
+.env
+.env.*
+*.key
+*credentials*
+*token*
+
+# 파이썬
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 작업 산출물(원하면 주석 해제)
+# 40-personal/
