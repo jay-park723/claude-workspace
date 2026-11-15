@@ -8,7 +8,7 @@
 
 ```
 00-inbox/      # 임시 캡처 (일단 여기 두고 나중에 정리, 20개 미만 유지)
-00-system/     # 템플릿·설정
+00-system/     # 템플릿·양식·기준 문서(03-guides)
 10-projects/   # 시작과 끝이 있는 일 (시한부)
 20-operations/ # 끝나지 않고 계속 굴러가는 일
 30-knowledge/  # 지식 축적 (00-wiki)
@@ -58,8 +58,13 @@
 | 문서 변환 | `md-to-pdf` · `pdf-to-md` · `excel-to-csv` · `csv-clean` · `transcript-organizer` |
 | 기획·사고 | `thinking-partner` · `dashboard-prd` · `webapp-prd` |
 | 지식 축적 | `wiki-ingest` · `wiki-lint` |
+| 웹 수집 | `web-crawler-ocr` (웹페이지 크롤링 + 이미지 OCR · Gemini 키는 선택) |
 | 외부 연동 | `notion-handler` (Notion 페이지·DB 다루기) |
 | 세팅 | `setup-workspace` |
+
+**서브에이전트 (.claude/agents/)**: `research-worker` — 여러 출처를 교차검증하는 심층 조사 담당. "○○ 시장 조사해줘, 3개 이상 소스로 검증"처럼 부르면 별도 작업 공간에서 조사해 결과만 돌려줍니다.
+
+**기준 문서 (00-system/03-guides/)**: 스킬·에이전트·CLAUDE.md를 만들 때 `@skills-guide.md 이 가이드 기준으로` 처럼 짚어 주세요.
 
 > 스킬은 **직접 만들 수 있습니다.** "이런 걸 하는 스킬 만들어줘"라고 말하면 됩니다. (Day 1에서 실습)
 
